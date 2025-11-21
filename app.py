@@ -368,21 +368,3 @@ if section == "🚆 RATP":
     # Affichage dans Streamlit
     st.plotly_chart(fig)
 
-
-    stations_par_ligne = df['res_com'].value_counts().reset_index()
-
-    # Création de l’histogramme
-    fig = px.bar(
-        x=stations_par_ligne.index,
-        y=stations_par_ligne.values,
-        title="Nombre de stations par ligne",
-        labels={'ligne': 'Ligne', 'nb_stations': 'Nombre de stations'},
-        text='nb_stations'
-    )
-
-    # Amélioration de l’affichage
-    fig.update_traces(textposition='outside')
-    fig.update_layout(xaxis_tickangle=-45)
-
-    # Affichage dans Streamlit
-    st.plotly_chart(fig)
