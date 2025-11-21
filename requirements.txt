@@ -1,6 +1,7 @@
-plotly.express
-matplotlib.pyplot
+plotly
+matplotlib
 streamlit 
 PIL
 base64
 pandas
+
