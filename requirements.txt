@@ -1,7 +1,5 @@
 plotly
 matplotlib
-streamlit 
-PIL
-base64
 pandas
+
 
